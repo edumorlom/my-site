@@ -1,13 +1,144 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.background {
+  position: fixed;
+  background-size: cover;
+  background: #00539C;
+
+}
+
+.background-white {
+  position: fixed;
+  background-size: cover;
+  background: white;
+}
+
+.background-black {
+  position: fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+.container{
+  width:  100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 36px 13px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 36px 13px rgba(0,0,0,0.3);
+}
+
+
+.logo{
+  pointer-events: none;
+  width: 100%;
+  max-width: 210px;
+  min-width: 80px;
+}
+
+.panel {
+  pointer-events: none;
+  width: 90%;
+  max-width: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin: 200px 0 0;
+}
+
+.swipeUp {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-items: center;
+}
+
+.border {
+  border: none;
+  border-radius: 20px;
+}
+
+.swipeUpIcon {
+  height: 20px;
+  padding: 0 150px;
+}
+
+.swipeUpText {
+  margin: 0 0 20px;
+}
+
+a:visited {color: white;}
+a:hover {color: white;}
+a:active {color: white;}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.subtitle{
+  color: grey;
+  font-weight: normal;
+  animation: fadeIn;
+  margin: 10px 0 0 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to   {opacity: 1;}
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+.chart-container {
+  margin: 4%;
+}
+
+.progressBar {
+  position: relative;
+  border-radius: 10pt;
+  margin-bottom: 5pt;
+  padding: 15pt 0pt;
+}
+
+.progressBar h1 {
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  opacity: 0;
+}
+
+.chart-container h1 {
+  font-size: 1.1em;
+}
+
+.title {
+  color: grey;
+  font-weight: bolder;
+  font-size: 2em;
+  animation: fadeIn 4s;
+}
+
+.skills {
+  margin-top: 4%;
 }
