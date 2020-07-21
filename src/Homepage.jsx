@@ -22,9 +22,6 @@ export default class Homepage extends React.Component {
                         canvasClassName={"background"}
                         params={{
                             "particles": {
-                                "line_linked": {
-                                    "color": "white"
-                                },
                                 "number": {
                                     "value": this.state.particlesValue
                                 },

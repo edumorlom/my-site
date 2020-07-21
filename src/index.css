@@ -109,14 +109,14 @@ a {
 }
 
 .chart-container {
-  margin: 4%;
+  margin: 0 4%;
 }
 
 .progressBar {
   position: relative;
   border-radius: 10pt;
   margin-bottom: 5pt;
-  padding: 15pt 0pt;
+  padding: 13pt 0pt;
 }
 
 .progressBar h1 {

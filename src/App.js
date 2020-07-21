@@ -4,6 +4,10 @@ import Homepage from "./Homepage";
 // import HelperMethods from "./HelperMethods";
 import Skills from "./Skills";
 
+import LogRocket from 'logrocket';
+LogRocket.init('3da9n7/my-site-bneso');
+
+
 class App extends React.Component {
 
     state = {screen: 'homepage'};

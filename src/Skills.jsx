@@ -1,6 +1,3 @@
-import Particles from "react-particles-js";
-import logo from "./logo.gif";
-import swipeUpIcon from "./blue-swipeup.gif";
 import React from "react";
 import ProgressBar from "./ProgressBar";
 import SwipeUp from "./SwipeUp";
