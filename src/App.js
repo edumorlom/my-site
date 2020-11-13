@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
 import Homepage from "./Homepage";
-// import HelperMethods from "./HelperMethods";
 import Skills from "./Skills";
-
-import LogRocket from 'logrocket';
-LogRocket.init('3da9n7/my-site-bneso');
-
 
 class App extends React.Component {
 
@@ -23,7 +18,7 @@ class App extends React.Component {
 
     nextScreen = () => {
         if (this.state.screen === 'homepage') return 'skills'
-        if (this.state.screen === 'skills') window.location = '/Resume_EduardoMorales.pdf'
+        if (this.state.screen === 'skills') window.location = '/resume.pdf'
     }
 
     render() {
