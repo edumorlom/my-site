@@ -42,7 +42,7 @@ export default class Homepage extends React.Component {
                 <div className={"container"}>
                     <div className={"panel border shadow"}>
                         <img className={"logo"} src={logo} alt={""}/>
-                        <h4 className="subtitle">Student Researcher at Google</h4>
+                        <h4 className="subtitle">Previously: Student Researcher at Google</h4>
                     </div>
                     <SwipeUp color={"white"} text={"View My Skills"} onClick={this.props.nextScreen}/>
                 </div>
