@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is the code for both my personal and professional [site] (https://edumorales.dev).
+This is the code for both my personal and professional [site](https://edumorales.dev).
 
 ## Demo
 
