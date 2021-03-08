@@ -1,4 +1,4 @@
-# My Personal Website
+# My Website
 
 This is the code for both my personal and professional [site](https://edumorales.dev).
 
