@@ -1,18 +1,15 @@
-body {
-  margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: white;
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .background {
   position: fixed;
   background-size: cover;
-  background: #00539C;
+  background: white;
 
 }
 
@@ -28,117 +25,78 @@ h1, h2, h3, h4, h5, h6 {
   background-color: black;
 }
 
-.container{
-  width:  100%;
-  height: 100%;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-}
-
-.shadow {
-  -webkit-box-shadow: 5px 5px 36px 13px rgba(0,0,0,0.3);
-  box-shadow: 5px 5px 36px 13px rgba(0,0,0,0.3);
-}
-
-
-.logo{
-  pointer-events: none;
-  width: 100%;
-  max-width: 210px;
-  min-width: 80px;
-}
-
 .panel {
-  pointer-events: none;
-  width: 90%;
-  max-width: 500px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
-  position: relative;
-  display: inline-block;
-  margin: 200px 0 0;
-}
-
-.swipeUp {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  justify-items: center;
-}
-
-.border {
-  border: none;
   border-radius: 20px;
+  box-shadow: 0 0 10px 10px white;
+  text-align: center;
+  background-color: white;
 }
 
-.swipeUpIcon {
-  height: 20px;
-  padding: 0 150px;
+.logo-container {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 25%;
+  min-width: 300px;
+  height: 30%;
+  z-index: 100;
 }
 
-.swipeUpText {
-  margin: 0 0 20px;
+.logo {
+  width: 60%;
+  min-width: 200px;
+  height: 100%;
 }
 
-a:visited {color: white;}
-a:hover {color: white;}
-a:active {color: white;}
-
-
-a {
-  color: white;
-  text-decoration: none;
+.swipe-up-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
 }
 
-.subtitle{
-  color: grey;
-  font-weight: normal;
-  animation: fadeIn;
-  margin: 10px 0 0 0;
+.swipe-up {
+  height: 40px !important;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to   {opacity: 1;}
-}
-
-.fadeIn {
-  animation: fadeIn 1s;
-}
-
-.chart-container {
-  margin: 0 4%;
-}
-
-.progressBar {
-  position: relative;
-  border-radius: 10pt;
-  margin-bottom: 5pt;
-  padding: 13pt 0pt;
-}
-
-.progressBar h1 {
-  padding-left: 10pt;
-  padding-right: 10pt;
-  margin: 0;
-  font-weight: bold;
-  text-align: left;
-  opacity: 0;
-}
-
-.chart-container h1 {
-  font-size: 1.1em;
+.swipe-up-text {
+  margin: 10px;
+  text-align: center;
+  color: #00539c;
 }
 
 .title {
+  text-align: center;
+  font-size: 1.5rem;
   color: grey;
-  font-weight: bolder;
-  font-size: 2em;
-  animation: fadeIn 4s;
+  margin-bottom: 0px;
 }
 
-.skills {
-  margin-top: 4%;
+.skills-container {
+  padding: 2%;
+}
+
+.progress-bar-container {
+  padding: 0%;
+  padding-top: 5px;
+}
+
+.progress-bar {
+  animation: fade-in ease 0.75s, scale-width 0.75s cubic-bezier(0, 0, 0.35, 1);
+}
+
+@keyframes fade-in {
+  from {opacity:0;}
+  to {opacity:1;}
+  }
+
+@keyframes scale-width {
+  from {width: 0%;}
+  to {width: 100%;}
 }
