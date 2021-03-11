@@ -27,7 +27,7 @@ export default function Skills(props: {nextScreen: () => void}) {
       <div className={'content-container'}>
         {skills.map(({text, percent}, i) => {
           const normalizedPercent = (percent - minPercent) / minPercent;
-          const color = chroma.mix('black', '#00539c', normalizedPercent);
+          const color = chroma.mix('black', '#00539C', normalizedPercent);
           return (
             <ProgressBar key={i} text={text} percent={percent} color={color} />
           );

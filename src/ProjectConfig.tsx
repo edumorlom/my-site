@@ -29,7 +29,7 @@ function ProjectConfig(): ProjectType[] {
       url:
         'https://github.com/datacommonsorg/tools/tree/master/covid19-dashboard',
       image:
-        'https://raw.githubusercontent.com/edumorlom/my-site/master/resources/icon-dc-dashboard.png',
+        'https://raw.githubusercontent.com/edumorlom/my-site/master/assets/icon-dc-dashboard.png',
       company: 'FIU',
       technologies: ['Python', 'React', 'TypeScript', 'Cloud'],
     },
@@ -63,6 +63,17 @@ function ProjectConfig(): ProjectType[] {
       url: 'https://flappybird.edumorales.dev/',
       image:
         'https://raw.githubusercontent.com/edumorlom/flappy-bird/main/resources/icon.png',
+      company: '',
+      technologies: ['TypeScript'],
+    },
+    {
+      title: 'Snake',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall.",
+      year: 2020,
+      url: 'https://snake.edumorales.dev/',
+      image:
+        'https://raw.githubusercontent.com/edumorlom/Snake/master/resources/icon.png',
       company: '',
       technologies: ['TypeScript'],
     },
