@@ -1,6 +1,6 @@
 import Particles from 'react-particles-js';
 import React, {useEffect, useState} from 'react';
-import {ReactComponent as EMLogo} from '../assets/logo.svg';
+import {ReactComponent as EMLogo} from './assets/logo.svg';
 import ParticlesConfig from './ParticlesConfig';
 import SwipeUp from './SwipeUp';
 
