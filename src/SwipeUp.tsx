@@ -1,5 +1,5 @@
 import {CSSProperties} from 'react';
-import {ReactComponent as SwipeUpSvg} from './swipe-up.svg';
+import {ReactComponent as SwipeUpSvg} from './assets/swipe-up.svg';
 
 export default function SwipeUp(props: {
   text: string;

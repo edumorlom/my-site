@@ -1,5 +1,5 @@
 import SwipeUp from './SwipeUp';
-import {ProjectConfig, ProjectType, LabelColors} from './ProjectConfig';
+import {ProjectType, LabelColors, ProjectConfig} from './ProjectConfig';
 
 export default function Projects(props: {nextScreen: () => void}): JSX.Element {
   return (
