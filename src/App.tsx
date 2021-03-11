@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react';
 import Homepage from './Homepage';
-import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Skills from './Skills';
+import Projects from './Projects';
 
 export default function App() {
-  const screenIds = ['/homepage', '/skills', '/resume'];
+  const screenIds = ['/homepage', '/skills', '/projects', '/resume'];
 
   const pathName = window.location.pathname;
   if (!pathName) window.location.pathname !== '/homepage';
@@ -23,12 +22,6 @@ export default function App() {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('touchmove', nextScreen);
-    window.addEventListener('mousedown', nextScreen);
-    window.addEventListener('mouseup', nextScreen);
-  });
-
   const Resume = () => {
     window.location.href = '/resume.pdf';
     return <></>;
@@ -38,11 +31,14 @@ export default function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/skills">
-          <Skills />
+          <Skills nextScreen={nextScreen} />
         </Route>
-        <Route path="/resume">{<Resume></Resume>}</Route>
+        <Route path="/resume">{<Resume />}</Route>
+        <Route path="/projects">
+          {<Projects nextScreen={nextScreen}></Projects>}
+        </Route>
         <Route path="/">
-          <Homepage />
+          <Homepage nextScreen={nextScreen} />
         </Route>
       </Switch>
     </BrowserRouter>

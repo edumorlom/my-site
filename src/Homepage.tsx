@@ -1,10 +1,10 @@
 import Particles from 'react-particles-js';
 import React, {useEffect, useState} from 'react';
-import {ReactComponent as SwipeUp} from './swipe-up.svg';
 import {ReactComponent as EMLogo} from './Animation/Transparent_Version/LOGO.svg';
 import ParticlesConfig from './ParticlesConfig';
+import SwipeUp from './SwipeUp';
 
-export default function Homepage() {
+export default function Homepage(props: {nextScreen: () => void}) {
   const [totalParticles, setTotalParticles] = useState(
     window.outerWidth * 0.05
   );
@@ -13,15 +13,16 @@ export default function Homepage() {
   );
 
   return (
-    <>
+    <div onClick={props.nextScreen}>
       <div className={'panel logo-container'}>
         <EMLogo className={'logo'} />
       </div>
       <Particles canvasClassName={'background'} params={ParticlesConfig} />
-      <div className={'panel swipe-up-container'}>
-        <SwipeUp className={'swipe-up'} />
-        <h3 className="swipe-up-text">View My Skills</h3>
-      </div>
-    </>
+      <SwipeUp
+        text={'Tap To View Skills'}
+        onClick={props.nextScreen}
+        absolute
+      />
+    </div>
   );
 }

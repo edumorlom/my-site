@@ -1,14 +1,14 @@
 import React from 'react';
 import ProgressBar from './ProgressBar';
 import chroma from 'chroma-js';
-import {ReactComponent as SwipeUp} from './swipe-up.svg';
+import SwipeUp from './SwipeUp';
 
 interface Skill {
   text: string;
   percent: number;
 }
 
-export default function Skills() {
+export default function Skills(props: {nextScreen: () => void}) {
   const skills: Skill[] = [
     {text: 'Full-Stack Engineer', percent: 100},
     {text: 'Python, TypeScript, Java and Go', percent: 95},
@@ -24,7 +24,7 @@ export default function Skills() {
   return (
     <>
       <h4 className={'title'}>My Skills</h4>
-      <div className={'skills-container'}>
+      <div className={'content-container'}>
         {skills.map(({text, percent}, i) => {
           const normalizedPercent = (percent - minPercent) / minPercent;
           const color = chroma.mix('black', '#00539c', normalizedPercent);
@@ -33,10 +33,11 @@ export default function Skills() {
           );
         })}
       </div>
-      <div className={'panel swipe-up-container'}>
-        <SwipeUp className={'swipe-up'} />
-        <h3 className="swipe-up-text">View My Resume</h3>
-      </div>
+      <SwipeUp
+        text={'Tap to View Projects'}
+        onClick={props.nextScreen}
+        absolute
+      />
     </>
   );
 }

@@ -5,13 +5,13 @@ export default function ProgressBar(props: {
 }) {
   return (
     <div className="progress-bar-container">
-      <svg width={`${props.percent}%`} height="60">
+      <svg width={`${props.percent}%`} height="3.5rem">
         <g>
           <rect
             className="progress-bar"
+            style={{height: '100%'}}
             width="100%"
-            height="100%"
-            rx="12"
+            rx="16"
             fill={props.color}
           />
           <text x="30px" y="60%" fill="white">
