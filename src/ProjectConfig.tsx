@@ -29,9 +29,21 @@ const ProjectConfig = (): ProjectType[] => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall.",
       year: 2019,
-      url: 'https://dl.acm.org/doi/10.1145/3347318.3355520',
+      url: 'https://tennis.edumorales.dev',
       image:
         'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-tennis.png',
+      company: 'IBM',
+      technologies: ['Publication', 'Machine Learning', 'Java', 'Python'],
+    },
+    {
+      title: 'IBM Acoustic Anomaly Detection',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall.",
+      year: 2019,
+      url:
+        'https://researcher.watson.ibm.com/researcher/files/us-wangshiq/JA_SenSys2019.pdf',
+      image:
+        'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-anomaly.png',
       company: 'IBM',
       technologies: ['Publication', 'Machine Learning', 'Java', 'Python'],
     },
@@ -68,18 +80,6 @@ const ProjectConfig = (): ProjectType[] => {
         'https://raw.githubusercontent.com/edumorlom/stay-safe-covid19/master/assets/icon.png',
       company: '',
       technologies: ['React Native', 'Node', 'Cloud'],
-    },
-    {
-      title: 'IBM Acoustic Anomaly Detection',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall.",
-      year: 2019,
-      url:
-        'https://researcher.watson.ibm.com/researcher/files/us-wangshiq/JA_SenSys2019.pdf',
-      image:
-        'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-tennis.png',
-      company: 'IBM',
-      technologies: ['Publication', 'Machine Learning', 'Java', 'Python'],
     },
     {
       title: 'Smile Detector',
