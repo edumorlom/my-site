@@ -2,6 +2,8 @@ import Homepage from './Homepage';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Skills from './Skills';
 import Projects from './Projects';
+import LogRocket from 'logrocket';
+LogRocket.init('yfmfgd/eduardo-morales-main-site');
 
 export default function App() {
   const screenIds = ['/homepage', '/skills', '/projects', '/resume'];

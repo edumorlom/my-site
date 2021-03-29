@@ -78,8 +78,7 @@ body {
 }
 
 .content-container {
-  margin: 1% 4%;
-  animation: fade-in ease 1s;
+  margin: 1% 5%;
 }
 
 .progress-bar-container {
@@ -98,6 +97,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin: 25px 0;
+  animation: fade-in ease 1s;
 }
 
 .project-description-container h3 {
@@ -167,10 +167,6 @@ body {
 
 @media only screen and (min-width: 1200px) {
 
-  .projects-container {
-    margin: 2% 5%;
-  }
-
   .project-container:nth-child(even) {
     float: right;
   }
@@ -182,8 +178,11 @@ body {
 
   .project-container {
     width: 40%;
-    min-height: 170px;
-    height: 150px;
+    height: 200px;
+  }
+
+  .project-description-container p {
+    height: 9npm 0px;
   }
 
   .swipe-up-container {

@@ -5,7 +5,7 @@ export default function ProgressBar(props: {
 }) {
   return (
     <div className="progress-bar-container">
-      <svg width={`${props.percent}%`} height="3.5rem">
+      <svg width={`${props.percent}%`} height="55px">
         <g>
           <rect
             className="progress-bar"
