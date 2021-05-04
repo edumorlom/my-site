@@ -31,14 +31,26 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
 
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add build -f
-        git commit -m "Add changes" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    # - name: Commit files
+    #   run: |
+    #     git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    #     git config --local user.name "github-actions[bot]"
+    #     git add build -f
+    #     git commit -m "Add changes" -a
+    # - name: Push changes
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     branch: master
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: master
+        server: ftp.edumorales.dev
+        username: eduavdob
+        password: MMS6KY!A@9FyeKDB
+        port: 21
+        exclude: .git*
+          - .git*/**
+          -  **/.git*/**
+          - node_modules/**
+          - node_modules/**/*
