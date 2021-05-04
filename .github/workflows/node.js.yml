@@ -48,7 +48,8 @@ jobs:
         server: edumorales.dev
         username: eduavdob
         password: MMS6KY!A@9FyeKDB
-        port: 21
+        local-dir: build/
+        server-dir: public_html
         exclude: .git*
           - .git*/**
           -  **/.git*/**
