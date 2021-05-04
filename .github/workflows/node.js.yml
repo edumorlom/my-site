@@ -45,7 +45,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.edumorales.dev
+        server: edumorales.dev
         username: eduavdob
         password: MMS6KY!A@9FyeKDB
         port: 21
