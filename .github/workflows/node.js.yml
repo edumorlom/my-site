@@ -49,7 +49,7 @@ jobs:
         username: eduavdob
         password: MMS6KY!A@9FyeKDB
         local-dir: build/
-        server-dir: public_html
+        server-dir: public_html/
         exclude: .git*
           - .git*/**
           -  **/.git*/**
