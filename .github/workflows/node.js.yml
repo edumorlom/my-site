@@ -42,11 +42,11 @@ jobs:
     #     github_token: ${{ secrets.GITHUB_TOKEN }}
     #     branch: master
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@master
       with:
         server: edumorales.dev
-        username: eduavdob
-        password: MMS6KY!A@9FyeKDB
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: build/
         server-dir: public_html/
         exclude: .git*
