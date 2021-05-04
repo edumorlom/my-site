@@ -1,4 +1,5 @@
 deployment:
   tasks:
     - export export DEPLOYPATH=/home/user/public_html/
+    - /bin/touch hi.txt
     - /bin/cp -R build/* $DEPLOYPATH
