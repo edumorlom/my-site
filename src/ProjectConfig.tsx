@@ -41,8 +41,7 @@ const ProjectConfig = (): ProjectType[] => {
       description:
         'Research demo for a full-stack application (web, mobile, and server) that uses machine learning models to classify and predict anomalies in sound. As an example, one can use this system to separate pneumonia from other diseases.',
       year: 2019,
-      url:
-        'https://researcher.watson.ibm.com/researcher/files/us-wangshiq/JA_SenSys2019.pdf',
+      url: 'https://researcher.watson.ibm.com/researcher/files/us-wangshiq/JA_SenSys2019.pdf',
       image:
         'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-anomaly.png',
       company: 'IBM',
@@ -53,8 +52,7 @@ const ProjectConfig = (): ProjectType[] => {
       description:
         "Web application that queries data from Google's knowledge graph to display the most up-to-date graphs. The dataset includes daily COVID-19 and Social Wellness data around the world. Developing and maintaining this application was one of my projects at Google.",
       year: 2020,
-      url:
-        'https://github.com/datacommonsorg/tools/tree/master/covid19-dashboard',
+      url: 'https://github.com/datacommonsorg/tools/tree/master/covid19-dashboard',
       image:
         'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-dc-dashboard.png',
       company: 'Google',
