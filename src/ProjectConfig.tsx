@@ -71,13 +71,7 @@ const PublicationConfig = (): ProjectType[] => {
       image:
         'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-football.png',
       company: 'IBM',
-      technologies: [
-        'Publication',
-        'Python',
-        'Openshift',
-        'Machine Learning',
-        'NLP',
-      ],
+      technologies: ['Publication', 'Python', 'Openshift', 'NLP'],
     },
     {
       title: 'Large Scale Diverse Combinatorial Optimization',
