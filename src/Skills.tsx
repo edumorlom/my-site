@@ -34,7 +34,7 @@ export default function Skills(props: {nextScreen: () => void}) {
         })}
       </div>
       <SwipeUp
-        text={'Tap to View Projects'}
+        text={'Tap to View Publications'}
         onClick={props.nextScreen}
         absolute
       />

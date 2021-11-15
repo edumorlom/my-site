@@ -26,28 +26,6 @@ const LabelColors = {
 const ProjectConfig = (): ProjectType[] => {
   return [
     {
-      title: 'IBM Acoustic ML for Tennis',
-      description:
-        "Research paper that proposes a new machine learning system that can classify a tennis match's acoustics in real-time. The pipeline can detect tennis events with an F1-score of 92.39% and point boundaries with average precision and recall values of around 80%.",
-      year: 2019,
-      url: 'https://tennis.edumorales.dev/',
-      image:
-        'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-tennis.png',
-      company: 'IBM',
-      technologies: ['Publication', 'Java', 'Python', 'Machine Learning'],
-    },
-    {
-      title: 'IBM Acoustic ML Detection',
-      description:
-        'Research demo for a full-stack application (web, mobile, and server) that uses machine learning models to classify and predict anomalies in sound. As an example, one can use this system to separate pneumonia from other diseases.',
-      year: 2019,
-      url: 'https://researcher.watson.ibm.com/researcher/files/us-wangshiq/JA_SenSys2019.pdf',
-      image:
-        'https://raw.githubusercontent.com/edumorlom/my-site/master/src/assets/icon-ibm-anomaly.png',
-      company: 'IBM',
-      technologies: ['Publication', 'Java', 'Python', 'Machine Learning'],
-    },
-    {
       title: 'Google DC Dashboard',
       description:
         "Web application that queries data from Google's knowledge graph to display the most up-to-date graphs. The dataset includes daily COVID-19 and Social Wellness data around the world. Developing and maintaining this application was one of my projects at Google.",

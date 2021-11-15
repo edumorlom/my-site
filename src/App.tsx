@@ -2,9 +2,16 @@ import Homepage from './Homepage';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Skills from './Skills';
 import Projects from './Projects';
+import Publications from './Publications';
 
 export default function App() {
-  const screenIds = ['/homepage', '/skills', '/projects', '/resume'];
+  const screenIds = [
+    '/homepage',
+    '/skills',
+    '/publications',
+    '/projects',
+    '/resume',
+  ];
 
   const pathName = window.location.pathname;
   if (!pathName) window.location.pathname !== '/homepage';
@@ -34,9 +41,10 @@ export default function App() {
           <Skills nextScreen={nextScreen} />
         </Route>
         <Route path="/resume">{<Resume />}</Route>
-        <Route path="/projects">
-          {<Projects nextScreen={nextScreen}></Projects>}
+        <Route path="/publications">
+          {<Publications nextScreen={nextScreen} />}
         </Route>
+        <Route path="/projects">{<Projects nextScreen={nextScreen} />}</Route>
         <Route path="/">
           <Homepage nextScreen={nextScreen} />
         </Route>
