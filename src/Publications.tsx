@@ -1,5 +1,5 @@
 import SwipeUp from './SwipeUp';
-import {ProjectType, LabelColors, PublicationConfig} from './PublicationConfig';
+import {ProjectType, LabelColors, PublicationConfig} from './ProjectConfig';
 
 export default function Publications(props: {
   nextScreen: () => void;
