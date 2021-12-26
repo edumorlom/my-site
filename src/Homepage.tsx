@@ -1,4 +1,4 @@
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 import React, {useEffect, useState} from 'react';
 import {ReactComponent as EMLogo} from './assets/logo.svg';
 import ParticlesConfig from './ParticlesConfig';
@@ -15,10 +15,10 @@ export default function Homepage(props: {nextScreen: () => void}) {
 
   return (
     <div onClick={props.nextScreen}>
+      <Particles canvasClassName={'background'} params={ParticlesConfig} />
       <div className={'panel logo-container'}>
         <EMLogo className={'logo'} />
       </div>
-      <Particles canvasClassName={'background'} params={ParticlesConfig} />
       <SwipeUp
         text={'Tap To View Skills'}
         onClick={props.nextScreen}
