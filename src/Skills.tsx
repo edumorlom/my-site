@@ -33,11 +33,7 @@ export default function Skills(props: {nextScreen: () => void}) {
           );
         })}
       </div>
-      <SwipeUp
-        text={'View Resume'}
-        onClick={props.nextScreen}
-        absolute
-      />
+      <SwipeUp text={'View Resume'} onClick={props.nextScreen} absolute />
     </>
   );
 }

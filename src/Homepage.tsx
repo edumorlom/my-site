@@ -19,11 +19,7 @@ export default function Homepage(props: {nextScreen: () => void}) {
       <div className={'panel logo-container'}>
         <EMLogo className={'logo'} />
       </div>
-      <SwipeUp
-        text={'View Skills'}
-        onClick={props.nextScreen}
-        absolute
-      />
+      <SwipeUp text={'View Skills'} onClick={props.nextScreen} absolute />
     </div>
   );
 }
