@@ -10,7 +10,7 @@ export default function Projects(props: {nextScreen: () => void}): JSX.Element {
           <ProjectView key={index} project={project} />
         ))}
       </div>
-      <SwipeUp text={'Tap To View Resume'} onClick={props.nextScreen} />
+      <SwipeUp text={'View Resume'} onClick={props.nextScreen} />
     </>
   );
 }

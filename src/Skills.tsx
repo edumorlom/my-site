@@ -11,12 +11,12 @@ interface Skill {
 export default function Skills(props: {nextScreen: () => void}) {
   const skills: Skill[] = [
     {text: 'Full-Stack Engineer', percent: 100},
-    {text: 'Python, TypeScript, Java and Go', percent: 95},
+    {text: 'Python, Node, TypeScript and Java', percent: 95},
     {text: 'React and React Native', percent: 90},
     {text: 'Docker Containers', percent: 80},
-    {text: 'User Interface/Experience', percent: 70},
-    {text: 'Selenium Testing', percent: 60},
+    {text: 'Cloud Computing', percent: 60},
     {text: 'AI and ML', percent: 55},
+    {text: 'User Interface/Experience', percent: 50},
   ];
 
   const minPercent = Math.min(...skills.map(skill => skill.percent));
@@ -34,7 +34,7 @@ export default function Skills(props: {nextScreen: () => void}) {
         })}
       </div>
       <SwipeUp
-        text={'Tap to View Publications'}
+        text={'View Resume'}
         onClick={props.nextScreen}
         absolute
       />

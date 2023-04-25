@@ -20,7 +20,7 @@ export default function Homepage(props: {nextScreen: () => void}) {
         <EMLogo className={'logo'} />
       </div>
       <SwipeUp
-        text={'Tap To View Skills'}
+        text={'View Skills'}
         onClick={props.nextScreen}
         absolute
       />

@@ -8,8 +8,8 @@ export default function App() {
   const screenIds = [
     '/homepage',
     '/skills',
-    '/publications',
-    '/projects',
+    // '/publications',
+    // '/projects',
     '/resume',
   ];
 
