@@ -4,6 +4,10 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Publications from './Publications';
 
+import LogRocket from 'logrocket';
+
+LogRocket.init('yfmfgd/eduardo-morales-main-site');
+
 export default function App() {
   const screenIds = [
     '/homepage',
