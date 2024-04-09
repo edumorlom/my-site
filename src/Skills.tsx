@@ -13,10 +13,10 @@ export default function Skills(props: {nextScreen: () => void}) {
     {text: 'Full-Stack Engineer', percent: 100},
     {text: 'Python, Node, TypeScript and Java', percent: 95},
     {text: 'NextJS and React', percent: 90},
+    {text: 'AI/ML (LLM)', percent: 85},
     {text: 'Kubernetes', percent: 80},
-    {text: 'Cloud Computing', percent: 60},
-    {text: 'AI and ML', percent: 55},
-    {text: 'UI/UX', percent: 50},
+    {text: 'Cloud Computing', percent: 75},
+    {text: 'UI/UX', percent: 70},
   ];
 
   const minPercent = Math.min(...skills.map(skill => skill.percent));
